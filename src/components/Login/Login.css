@@ -1,0 +1,70 @@
+.signup-form {
+  margin-top: 150px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: auto;
+}
+.signup-form h3 {
+  margin-left: 8%;
+}
+form {
+  text-align: center;
+}
+
+form input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid gray;
+  width: 80%;
+  padding: 10px;
+  height: 30px;
+}
+form input[type="checkbox"] {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+form input[type="submit"] {
+  width: 83%;
+  margin-top: 15px;
+  padding: 5px;
+  height: 45px;
+  background-color: tomato;
+  color: white;
+  border: 0px;
+}
+
+.other-signin {
+  text-align: center;
+}
+.other-signin button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin: 10px;
+  border: 1px solid gray;
+  width: 26%;
+}
+.header-container {
+  border-bottom: 1px solid rgb(204, 201, 201);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.other-signin button:hover {
+  background-color: rgb(238, 251, 238);
+}
+
+.signin-button {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 40px;
+  text-align: center;
+}
+
+#error-message p {
+  margin-left: 8%;
+  color: red;
+}

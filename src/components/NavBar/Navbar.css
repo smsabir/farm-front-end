@@ -1,0 +1,67 @@
+.header-part {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.header-part a {
+  float: left;
+  color: rgb(83, 83, 83);
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logo {
+  float: left;
+  padding: 10px;
+  height: auto;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.menu {
+  margin-top: 30px;
+  float: right;
+  margin-right: 8%;
+}
+
+.menu a:hover {
+  color: rgb(8, 75, 163);
+  text-decoration: none;
+}
+
+#button {
+  padding: 18px 40px;
+  color: white;
+  background-color: tomato;
+  border-radius: 15px;
+  font-size: 15px;
+  line-height: 25px;
+  border: white;
+}
+
+#button:hover {
+  background-color: rgb(250, 130, 109);
+}
+
+@media screen and (max-width: 650px) {
+  .header-part Link {
+    float: none;
+    text-align: left;
+    display: block;
+  }
+  .menu {
+    float: none;
+  }
+  .logo {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
