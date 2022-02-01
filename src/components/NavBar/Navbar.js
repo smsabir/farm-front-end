@@ -34,8 +34,8 @@ const Navbar = () => {
                 <Link to="#">Blog</Link>
                 <Link to="#">Contact</Link>
                 {
-                  loggedInUser.email? <Link onClick={signOut} id="button">{loggedInUser.displayName || loggedInUser.name || "New User"} &nbsp; <i className="fa fa-sign-out" aria-hidden="true"></i>
-                  </Link> : <Link to="/login" id="button">Login</Link>
+                  loggedInUser.email? <Link onClick={signOut} id="button">{loggedInUser.displayName || loggedInUser.name || "New User"} &nbsp; 
+                  </Link> : <Link to="/login" id="button"><i className="bi bi-box-arrow-left"></i> Login</Link>
                 }
             </div>
             

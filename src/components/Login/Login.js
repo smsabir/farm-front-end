@@ -9,7 +9,7 @@ const Login = () => {
     
     initializeLoginFramework();
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [newUser, setNewUser] = useState(true);
+    const [newUser, setNewUser] = useState(false);
     const [user, setUser] = useState({
         isSignedIn: false,
         name: '',
@@ -107,13 +107,10 @@ const Login = () => {
     let checked;
     return (
         <div>
-            {/* <div className="header-container">
-                <Header></Header>
-            </div> */}
-            <p></p>
+            
             <div className="signup-form">
                 {
-                    newUser ? <h3>Create an account</h3> : <h3>Login here</h3>
+                    newUser ? <h3 className="mt-3">Create an account</h3> : <h3 className="mt-3">Login here</h3>
                 }
                 <div id="error-message">
                     <p className="error-message">{errorMsg}</p>
@@ -125,13 +122,15 @@ const Login = () => {
                     <input type="email" id="email" name="email" onBlur={handleBlurField} placeholder="Email" required />
                     <input type="password" name="password" onBlur={handleBlurField} placeholder="Password" required />
                     {
-                        newUser ? <input type="password" id="repeatPassword" name="repeatPassword" onBlur={handleBlurField} placeholder="Confirm Password" required /> : <><input type="checkbox" name="checkbox" checked={checked} onClick={!checked} /><label htmlFor="checkbox"> Remeber me</label><br /> </>
+                        newUser ? <input type="password" id="repeatPassword" name="repeatPassword" onBlur={handleBlurField} placeholder="Confirm Password" required /> : 
+                        <><br/><input type="checkbox" name="checkbox" checked={checked} onClick={!checked} /><label htmlFor="checkbox"> Remeber me</label><br/> </>
                     }
                     <input type="submit" value={newUser ? 'Create an account' : 'Sign in'} />
                     <p>{newUser ? 'Have an account?' : 'No account?'}<a onClick={() => setNewUser(!newUser)} style={{ color: "green" }}> {newUser ? 'Sign in' : 'Create an account'}</a></p>
                 </form>
             </div>
             <div className="other-signin">
+                <br/>
                 <p>-------------------- Or --------------------</p>
                 <div>
                     <button onClick={googleSignIn} className="signin-button"><i className="fa fa-google fa-2x"></i> Continue with Google</button>
